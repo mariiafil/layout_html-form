@@ -1,6 +1,6 @@
-'use strict';
+"use strict"; //eslint-disable-line
 
-const INPUT_BUTTON_TYPES = ['button', 'submit', 'reset'];
+const INPUT_BUTTON_TYPES = ["button", "submit", "reset"]; //eslint-disable-line
 
 // eslint-disable-next-line no-unused-vars
 function onSubmit(event) {
@@ -10,7 +10,13 @@ function onSubmit(event) {
 
   const formValue = [...form.elements]
     .filter(({ type }) => !INPUT_BUTTON_TYPES.includes(type))
-    .reduce((acc, { value, name }) => ({ ...acc, [name]: value }), {});
+    .reduce(
+      (acc, { value, name }) => ({
+        ...acc,
+        [name]: value //eslint-disable-line
+      }),
+      {}
+    );
 
   window.alert(
     `Form name: ${form.name}\nForm value: ${JSON.stringify(formValue, null, 4)}`

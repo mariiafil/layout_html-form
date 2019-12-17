@@ -1,0 +1,21 @@
+.area_wrapper {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.input_area {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.area_wrapper > .input_area:last-child {
+  margin-bottom: 0;
+}
+
+.input_age {
+  padding-right: 7px;
+}
+
+.input_bed_time {
+  width: 124px;
+}
