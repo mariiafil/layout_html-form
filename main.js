@@ -1,6 +1,6 @@
-"use strict"; //eslint-disable-line
+'use strict';
 
-const INPUT_BUTTON_TYPES = ["button", "submit", "reset"]; //eslint-disable-line
+const INPUT_BUTTON_TYPES = ['button', 'submit', 'reset'];
 
 // eslint-disable-next-line no-unused-vars
 function onSubmit(event) {
@@ -13,7 +13,7 @@ function onSubmit(event) {
     .reduce(
       (acc, { value, name }) => ({
         ...acc,
-        [name]: value //eslint-disable-line
+        [name]: value,
       }),
       {}
     );
